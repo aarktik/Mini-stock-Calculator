@@ -80,6 +80,31 @@ docker compose up --build
 
 ---
 
+## 📌 ตัวอย่างการใช้งาน (CLI)
+```
+Welcome to Mini Stock Calculator!
+Enter stock tickers separated by comma (e.g., AAPL,MSFT): AAPL
+Enter the buy price for AAPL (USD): 100
+Enter the number of shares for AAPL: 10
+Use live sell price from a REAL API (Alpha Vantage)? (y/n): n
+Enter the sell price for AAPL (USD): 120
+
+--- Results for AAPL ---
+Buy Price: 100.00 USD
+Sell Price: 120.00 USD
+Shares: 10
+Profit: 200.00 USD
+Percentage Change: 20.00%
+It's a great investment!
+
+Summary of Portfolio
+AAPL: Profit = 200.00 USD, Change = 20.00%
+
+Total Profit: 200.00 USD
+Average Percentage Change: 20.00%
+```
+---
+
 ## 🔄 CI/CD (DevOps)
 - มีไฟล์ GitHub Actions (.github/workflows/ci.yml) สำหรับ
  - ตรวจสอบโค้ด (compileall)
