@@ -27,7 +27,8 @@ mini-stock-calculator/
 │  └─ Dockerfile.gradio
 ├─ compose.yaml               # docker compose (optional)
 ├─ .env.example               # ตัวอย่าง environment file
-└─ README.md
+├─ README.md
+└─ .gitignore
 ```
 
 ---
