@@ -83,25 +83,49 @@ docker compose up --build
 ## 📌 ตัวอย่างการใช้งาน (CLI)
 ```
 Welcome to Mini Stock Calculator!
-Enter stock tickers separated by comma (e.g., AAPL,MSFT): AAPL
-Enter the buy price for AAPL (USD): 100
-Enter the number of shares for AAPL: 10
-Use live sell price from a REAL API (Alpha Vantage)? (y/n): n
-Enter the sell price for AAPL (USD): 120
+Enter stock tickers separated by comma (e.g., AAPL,MSFT,NVDA): AAPL,MSFT,TOST
+Enter the buy price for AAPL (USD): 200
+Enter the number of shares for AAPL: 1
+Enter the buy price for MSFT (USD): 130
+Enter the number of shares for MSFT: 3
+Enter the buy price for TOST (USD): 35
+Enter the number of shares for TOST: 2
+Use live sell price from a REAL API (Alpha Vantage)? (y/n): y
+Live price for AAPL: 254.43 USD
 
 --- Results for AAPL ---
-Buy Price: 100.00 USD
-Sell Price: 120.00 USD
-Shares: 10
-Profit: 200.00 USD
-Percentage Change: 20.00%
+Buy Price: 200.00 USD
+Sell Price: 254.43 USD
+Shares: 1
+Profit: 54.43 USD
+Percentage Change: 27.22%
 It's a great investment!
+Live price for MSFT: 514.45 USD
+
+--- Results for MSFT ---
+Buy Price: 130.00 USD
+Sell Price: 514.45 USD
+Shares: 3
+Profit: 1153.35 USD
+Percentage Change: 295.73%
+It's a great investment!
+Live price for TOST: 37.95 USD
+
+--- Results for TOST ---
+Buy Price: 35.00 USD
+Sell Price: 37.95 USD
+Shares: 2
+Profit: 5.90 USD
+Percentage Change: 8.43%
+It's a good investment!
 
 Summary of Portfolio
-AAPL: Profit = 200.00 USD, Change = 20.00%
+AAPL: Profit = 54.43 USD, Change = 27.22%
+MSFT: Profit = 1153.35 USD, Change = 295.73%
+TOST: Profit = 5.90 USD, Change = 8.43%
 
-Total Profit: 200.00 USD
-Average Percentage Change: 20.00%
+Total Profit: 1213.68 USD
+Average Percentage Change: 110.46%
 ```
 ---
 
