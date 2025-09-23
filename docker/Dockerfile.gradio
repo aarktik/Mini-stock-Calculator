@@ -1,0 +1,14 @@
+FROM python:3.11-slim
+WORKDIR /app
+# ติดตั้ง deps core + gradio
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+COPY apps/gradio_ui/requirements.txt ./requirements-gradio.txt
+RUN pip install --no-cache-dir -r requirements-gradio.txt
+# คัดลอกโค้ด
+COPY src/ ./src/
+COPY apps/gradio_ui/ ./apps/gradio_ui/
+ENV PYTHONPATH=/app/src
+EXPOSE 7860
+# รับคีย์ตอนรัน: -e ALPHAVANTAGE_API_KEY=xxx
+CMD ["python", "apps/gradio_ui/app.py"]
