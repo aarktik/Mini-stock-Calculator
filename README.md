@@ -10,7 +10,7 @@
 ---
 
 ## 🗂️ โครงสร้างโปรเจกต์
-
+```
 mini-stock-calculator/
 ├─ src/
 │  └─ mini_stock_calculator/
@@ -28,7 +28,7 @@ mini-stock-calculator/
 ├─ requirements.txt           # deps ของ core
 ├─ .env.example               # ตัวอย่าง environment file
 └─ README.md
-
+```
 
 ---
 
