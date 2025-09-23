@@ -41,7 +41,7 @@ mini-stock-calculator/
 ---
 
 ## ▶️ วิธีรัน (Local)
-# 1) รัน CLI
+### 1) รัน CLI
 
 สร้าง virtualenv
 python -m venv .venv
@@ -58,7 +58,7 @@ $env:ALPHAVANTAGE_API_KEY="YOUR_REAL_KEY"
 รันโปรแกรม
 python -m mini_stock_calculator.cli
 
-2) รัน Gradio UI
+### 2) รัน Gradio UI
 pip install -r apps/gradio_ui/requirements.txt
 export ALPHAVANTAGE_API_KEY=YOUR_REAL_KEY
 python apps/gradio_ui/app.py
@@ -66,15 +66,15 @@ python apps/gradio_ui/app.py
 ---
 
 ## 🐳 รันด้วย Docker
-# CLI
+### CLI
 docker build -f docker/Dockerfile.cli -t mini-stock-cli .
 docker run --rm -it -e ALPHAVANTAGE_API_KEY=YOUR_KEY mini-stock-cli
 
-# Gradio UI
+### Gradio UI
 docker build -f docker/Dockerfile.gradio -t mini-stock-gradio .
 docker run --rm -p 7860:7860 -e ALPHAVANTAGE_API_KEY=YOUR_KEY mini-stock-gradio
 
-# Compose (รัน CLI + GUI พร้อมกัน)
+### Compose (รัน CLI + GUI พร้อมกัน)
 docker compose up --build
 
 ---
