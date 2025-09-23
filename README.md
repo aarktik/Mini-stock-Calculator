@@ -10,6 +10,7 @@
 ---
 
 ## 🗂️ โครงสร้างโปรเจกต์
+
 mini-stock-calculator/
 ├─ src/
 │  └─ mini_stock_calculator/
@@ -42,22 +43,22 @@ mini-stock-calculator/
 ## ▶️ วิธีรัน (Local)
 # 1) รัน CLI
 
-# สร้าง virtualenv
+สร้าง virtualenv
 python -m venv .venv
 source .venv/bin/activate  # บน Windows: .venv\Scripts\activate
 
-# ติดตั้ง dependencies
+ติดตั้ง dependencies
 pip install -r requirements.txt
 
-# export key
+export key
 export ALPHAVANTAGE_API_KEY=YOUR_REAL_KEY   # macOS/Linux
-# หรือบน Windows PowerShell:
-# $env:ALPHAVANTAGE_API_KEY="YOUR_REAL_KEY"
+หรือบน Windows PowerShell:
+$env:ALPHAVANTAGE_API_KEY="YOUR_REAL_KEY"
 
-# รันโปรแกรม
+รันโปรแกรม
 python -m mini_stock_calculator.cli
 
-# 2) รัน Gradio UI
+2) รัน Gradio UI
 pip install -r apps/gradio_ui/requirements.txt
 export ALPHAVANTAGE_API_KEY=YOUR_REAL_KEY
 python apps/gradio_ui/app.py
