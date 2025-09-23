@@ -1,6 +1,6 @@
 # 📊 Mini Stock Calculator
 
-โปรเจกต์นี้เป็น **Mini Stock Portfolio Calculator** สำหรับนักศึกษา/นักลงทุนมือใหม่  
+โปรเจกต์นี้เป็น **Mini Stock Calculator** สำหรับนักศึกษา/นักลงทุนมือใหม่  
 ประกอบด้วย 2 ส่วนหลัก:  
 - **Core (CLI)** → โปรแกรม command-line ใช้คำนวณกำไร/ขาดทุนหุ้น  
 - **GUI (Gradio)** → ส่วนติดต่อผู้ใช้แบบ web interface (เหมาะกับการรันใน Colab หรือ local)  
