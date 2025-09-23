@@ -1,0 +1,8 @@
+FROM python:3.11-slim
+WORKDIR /app
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+COPY src/ ./src/
+ENV PYTHONPATH=/app/src
+# รับคีย์ตอนรัน: -e ALPHAVANTAGE_API_KEY=xxx
+CMD ["python", "-m", "mini_stock_calculator.cli"]
