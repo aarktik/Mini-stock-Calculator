@@ -1,3 +1,4 @@
+from __future__ import annotations
 import requests
 from .config import get_alpha_vantage_key
 
@@ -8,7 +9,11 @@ def get_price_alpha_vantage(ticker: str, api_key: str | None = None) -> float | 
         return None
 
     url = "https://www.alphavantage.co/query"
-    params = {"function": "GLOBAL_QUOTE", "symbol": ticker, "apikey": api_key}
+    params = {
+        "function": "GLOBAL_QUOTE",
+        "symbol": ticker,
+        "apikey": api_key
+    }
 
     try:
         r = requests.get(url, params=params, timeout=10)
@@ -22,3 +27,10 @@ def get_price_alpha_vantage(ticker: str, api_key: str | None = None) -> float | 
     except Exception as e:
         print(f"⚠️ API error for {ticker}: {e}")
         return None
+
+def get_stock_info(ticker: str) -> dict | None:
+    """ดึงราคาปัจจุบันของหุ้นจาก Alpha Vantage หรือ None หากล้มเหลว"""
+    price = get_price_alpha_vantage(ticker)
+    if price is None:
+        return None
+    return {"ticker": ticker, "price": price}
