@@ -21,11 +21,11 @@ mini-stock-calculator/
 ├─ apps/
 │  └─ gradio_ui/
 │     └─ app.py               # Gradio web UI
+│     └─ requirements.txt     # deps ของ core
 ├─ docker/
 │  ├─ Dockerfile.cli
 │  └─ Dockerfile.gradio
 ├─ compose.yaml               # docker compose (optional)
-├─ requirements.txt           # deps ของ core
 ├─ .env.example               # ตัวอย่าง environment file
 └─ README.md
 ```
