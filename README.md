@@ -29,6 +29,7 @@ mini-stock-calculator/
 ├─ .env.example               # ตัวอย่าง environment file
 └─ README.md
 
+
 ---
 
 ## ⚙️ การตั้งค่า API Key
