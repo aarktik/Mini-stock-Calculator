@@ -31,10 +31,10 @@ mini-stock-calculator/
 │     └─ config.py            # จัดการ API key จาก environment
 │     
 │
-├─ compose.yaml               # docker compose (optional)
 ├─ .env.example               # ตัวอย่าง environment file
+├─ .gitignore
 ├─ README.md
-└─ .gitignore
+└─ compose.yaml               # docker compose (optional)
 ```
 
 ---
