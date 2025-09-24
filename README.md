@@ -17,6 +17,10 @@ mini-stock-calculator/
 │     └─ app.py               # Gradio web UI
 │     └─ requirements.txt     # deps ของ core
 │
+├─ docker/
+│  ├─ Dockerfile.cli
+│  └─ Dockerfile.gradio
+│
 ├─ src/
 │  └─ mini_stock_calculator/
 │     ├─ calculations.py      # logic คำนวณ P/L, %change
@@ -24,9 +28,6 @@ mini-stock-calculator/
 │     ├─ config.py            # จัดการ API key จาก environment
 │     └─ cli.py               # main program (CLI)
 │
-├─ docker/
-│  ├─ Dockerfile.cli
-│  └─ Dockerfile.gradio
 ├─ compose.yaml               # docker compose (optional)
 ├─ .env.example               # ตัวอย่าง environment file
 ├─ README.md
