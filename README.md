@@ -12,16 +12,18 @@
 ## 🗂️ โครงสร้างโปรเจกต์
 ```
 mini-stock-calculator/
+├─ apps/
+│  └─ gradio_ui/
+│     └─ app.py               # Gradio web UI
+│     └─ requirements.txt     # deps ของ core
+│
 ├─ src/
 │  └─ mini_stock_calculator/
 │     ├─ calculations.py      # logic คำนวณ P/L, %change
 │     ├─ alpha_vantage.py     # เรียก API ราคาหุ้น
 │     ├─ config.py            # จัดการ API key จาก environment
 │     └─ cli.py               # main program (CLI)
-├─ apps/
-│  └─ gradio_ui/
-│     └─ app.py               # Gradio web UI
-│     └─ requirements.txt     # deps ของ core
+│
 ├─ docker/
 │  ├─ Dockerfile.cli
 │  └─ Dockerfile.gradio
