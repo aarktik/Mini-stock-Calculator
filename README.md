@@ -14,7 +14,7 @@
 mini-stock-calculator/
 ├─ apps/
 │  └─ gradio_ui/
-│     └─ app.py               # Gradio web UI
+│     ├─ app.py               # Gradio web UI
 │     └─ requirements.txt     # deps ของ core
 │
 │
